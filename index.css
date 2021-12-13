@@ -1,0 +1,157 @@
+html{
+    font-size: 16px;
+}
+body{
+    background: #F2F2F2;
+    padding: 0;
+    margin: 0;
+}
+.content{        
+    margin: 25px 15px;
+    min-width: 360px;
+}
+
+.footer{
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+
+.footer__img{
+    width: 4em;
+}
+.footer__img__content{
+    background-color: #B3A125;
+    border-radius: .5em;
+    margin: 0.5em 1em;
+    padding: 1em;
+}
+
+.footer__item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__titulo{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background: #CC0000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.header__icon{
+    width: 1.5rem;
+}
+
+.header__title{
+    margin: 0;
+    font-family: 'Montserrat', serif;
+    font-size: .8rem;
+    color: #ffffff;
+}
+
+.info{
+    background-color: #ffeeb4;
+}
+
+
+.info__descripcion{
+    background-color: #ffffff;
+    border-radius: .5em;
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+
+.info__pokemon{
+    display: flex;
+    flex-flow: column;   
+}
+.info__principal{   
+    display: flex;
+    flex-flow: column;
+}
+.info__seccion{
+    padding: 15px 35px;
+}
+.info__imagen{
+    width: 100%;
+}
+
+.item{
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+
+.item__key{
+    min-width: 50%;
+}
+.titulo{
+    background-color: #ffffff;
+    padding: .3em 2em;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__icon{
+    height: 1.5rem;
+    margin-right: .5em; 
+}
+
+.titulo__nombre{
+    margin: 0;
+    font-family: 'Montserrat';    
+}
+
+@media (min-width: 768px) {
+    .footer{
+        flex-flow: row;
+    }
+    .header{
+        justify-content: start;
+    }
+    
+    .info__descripcion{
+        width: 18em;
+        padding-top: 3em;
+    }
+    .info__item{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .info__pokemon{
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+    .item{
+        flex-flow: column;
+        justify-content: center;
+    }
+    .item__key{
+        min-width: 0%;
+    }
+    
+    
+}
